@@ -5,31 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Profile card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  Victor Crest
-  26
-  London
+      <!-- PROFILE CARD -->
+  <main class="profile-card">
 
-  80K
-  Followers
+        <img src="images/bg-pattern-card.svg" alt="cover picture">
+      
+    <section class="profile-card_profile">
+      <div class="profile-card_avatar"></div>
 
-  803K
-  Likes
+      <section class="profile-card_bio">
+        <h1 class="profile-name">Victor Crest <span class="age">26</span></h1>
+        <p class="profile-city">London</p>
+      </section>
+      
+        <section class="profile-card-info"> 
+          <h2 class="profile-card-info_count">80K</h2> 
+          Follower
+        </section>
 
-  1.4K
-  Photos
-  <div class="attribution">
+        <section class="profile-card-info">
+          <h2 class="profile-card-info_count">803K</h2>
+          Likes
+        </section>
+
+        <section class="profile-card-info">
+          <h2 class="profile-card-info_count">1.4K</h2>
+          Photos
+        </section>
+    </section>
+  </main>
+
+      <!-- AUTHOR REFERRAL LINK SECTION -->
+  <footer class="author-link"> 
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://www.instagram.com/ricardo_grauppe/">Ricardo Grauppe</a>.
+  </footer>
 </body>
 </html>
