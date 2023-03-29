@@ -14,17 +14,6 @@
   </p>
 </div>
 
-  <!-- Status -->
-  <a href="#">
-    <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" alt="Status Completed">
-  </a> &nbsp;&nbsp;&nbsp;
-
-  <!-- Difficulty -->
-  <a href="https://www.frontendmentor.io/challenges?difficulties=1"  target="_blank">
-    <img src="https://img.shields.io/badge/Difficulty-Newbie-61BECD?style=for-the-badge&logo=frontendmentor" alt="Challenge Difficulty - Newbie">
-  </a>
-
-</div>
 <br />
 <br />
 
