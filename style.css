@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 :root {
+    --dark-cyan: hsl(185, 75%, 39%);
     --very-dark-desaturated-blue: hsl(229, 23%, 23%);
     --dark-grayish-blue: hsl(227, 10%, 46%);
     --dark-grey: hsl(0, 0%, 59%);
-    --ff-regular: "KumbhSans Regular";
-    --ff-bold: "KumbhSans Bold";
 }
 
 
@@ -16,35 +15,52 @@
 }
 
 body {
+    min-height: 100vh;
     background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
-    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    background-position: right 40vw bottom 60vh, left 25vw top 50vh;
     background-repeat: no-repeat, no-repeat;
-    background-color: hsl(185deg, 75%, 39%);
+    background-color: var(--dark-cyan);
     font-family: 'Kumbh Sans', sans-serif;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-rendering: optimizeSpeed;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
-main {
-    background-color: hsl(0, 0%, 100%);
-    max-width: 350px;
-    border-radius: 20px;
+.descripition {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
     overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
+
+/* PROFILE CARD */
 
 .profile-card {
     width: 85%;
-    height: 26em;
+    height: 23.2em;
     display: grid;
-    grid-template-rows: minmax(0, .5fr) 1fr;
-    background: #f7f7f7;
+    grid-template-rows: .6fr 1fr;
+    background: white;
     color: var(--dark-grayish-blue);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 30px 70px rgba(0,0,0,.4);
-    text-rendering: optimizeSpeed;
+    box-shadow: 0 60px 80px rgba(0,0,0,.16);
+}
+
+.profile-card_banner-section {
+    overflow: hidden;
+}
+
+.profile-card_banner {
+    width: 100%;
+    transition: .7s ease;
 }
 
 .profile-card_profile {
@@ -56,30 +72,42 @@ main {
 
 .profile-card_avatar {
     position: absolute;
-    top: -50px;
-    border: 3px solid #f7f7f7;
+    top: -53px;
+    border: 5px solid #f7f7f7;
     border-radius: 50%;
     place-self: center;
     transition: .7s ease;
-    width: 100px;
-    height: 100px;
-    background-image: url("../Card-component/images/image-victor.jpg");
-    background-size: 100%;
-    box-shadow: inset 0 0 5px white;
+    width: 105px;
+    height: 105px;
 }
 
 .profile-card_bio {
     grid-column: 1/-1;
     place-self: center;
-    margin-top: 30px;
-    text-transform: capitalize;
-    position: relative;
+    margin-top: 3.7em;
 }
 
-.profile-city {
-    margin-top: 15px;
+.profile-card__bio > * {
+    display: inline;
+    font-size: 1.3rem;
+}
+
+.profile-card_name{
+    font-weight: bold;
+    color: var(--very-dark-desaturated-blue);
+
+}
+
+.profile-card_age {
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+.profile-card_location {
+    margin-top: 8px;
     display: block;
     text-align: center;
+    font-size: .8rem;
 
 }
 
@@ -90,33 +118,39 @@ main {
     display: grid;
     place-items: center;
     align-content: center;
-    gap: 5px;
     letter-spacing: 0.1em;
     font-size: .8rem;
 }
 
-.profile-card-info:nth-last-child(1){ padding-right: 30px;}
-.profile-card-info:nth-child(3){ padding-left: 30px;}
+.profile-card-info:nth-last-child(1){ padding-right: 2.6em;}
+.profile-card-info:nth-child(3){ padding-left: 3em;}
 
 .profile-card-info_count {
     color: var(--very-dark-desaturated-blue);
     font-size: 1.3rem;
 }
 
-.age {
-    font-weight: 400;
-}
 /* FOOTER */
 
 .author-link {
     position: fixed;
     bottom: 0;
-    padding-bottom:15px;
-    z-index: 1;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    font-size: 0.85rem;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    color: #eee;
+}
 
+/* MEDIA SECTION */
+
+@media (min-width: 35em) {  /*  FOR TABLET */
+
+    body {
+        background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    }
+
+    .profile-card {
+        width: 21.9em;
+    }
 }

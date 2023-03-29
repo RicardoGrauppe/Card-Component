@@ -14,29 +14,32 @@
 <body>
       <!-- PROFILE CARD -->
   <main class="profile-card">
+    <h1 class="descripition">Profile Card Component</h1>
 
-        <img src="images/bg-pattern-card.svg" alt="cover picture">
+    <picture class="profile-card_banner-section">
+      <img src="./images/bg-pattern-card.svg" alt="" aria-hidden="true" class="profile-card_banner">
+    </picture>
       
     <section class="profile-card_profile">
-      <div class="profile-card_avatar"></div>
+      <img class="profile-card_avatar" src="./images/image-victor.jpg" alt="profile avatar">
 
       <section class="profile-card_bio">
-        <h1 class="profile-name">Victor Crest <span class="age">26</span></h1>
-        <p class="profile-city">London</p>
+        <h1 class="profile-card_name">Victor Crest<span class="profile-card_age">26</span></h1>
+        <p class="profile-card_location">London</p>
       </section>
       
         <section class="profile-card-info"> 
-          <h2 class="profile-card-info_count">80K</h2> 
+          <h3 class="profile-card-info_count">80K</h3> 
           Follower
         </section>
 
         <section class="profile-card-info">
-          <h2 class="profile-card-info_count">803K</h2>
+          <h3 class="profile-card-info_count">803K</h3>
           Likes
         </section>
 
         <section class="profile-card-info">
-          <h2 class="profile-card-info_count">1.4K</h2>
+          <h3 class="profile-card-info_count">1.4K</h3>
           Photos
         </section>
     </section>
