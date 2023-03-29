@@ -18,7 +18,7 @@
 <div align="center">
   <!-- Profiles -->
   <a href="https://www.frontendmentor.io/profile/RicardoGrauppe" target="_blank">
-    <img src="https://img.shields.io/badge/Profile-0xAbdulKhalid-eee?style=for-the-badge&logo=frontendmentor" alt="Abdul's Profile">
+    <img src="" alt="Ricardo Profile">
   </a> &nbsp;&nbsp;&nbsp;
 
   <!-- Status -->
