@@ -14,13 +14,6 @@
   </p>
 </div>
 
-<!-- Badges -->
-<div align="center">
-  <!-- Profiles -->
-  <a href="https://www.frontendmentor.io/profile/RicardoGrauppe" target="_blank">
-    <img src="" alt="Ricardo Profile">
-  </a> &nbsp;&nbsp;&nbsp;
-
   <!-- Status -->
   <a href="#">
     <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" alt="Status Completed">
