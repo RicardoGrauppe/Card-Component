@@ -32,7 +32,7 @@
 - |||
   | :----- | :----- |
   | Solution URL: | [Card-Component Challenge](https://www.frontendmentor.io/solutions/cardcomponent-i1784iQUSi) |
-  | Live Site URL: | [https://ricardograuppe.github.io/Card-Component/](https://0xabdulkhalid.github.io/profile-card-component/) |
+  | Live Site URL: | [Card-Component Live](https://ricardograuppe.github.io/Card-Component/) |
   |||
 
 <br>
